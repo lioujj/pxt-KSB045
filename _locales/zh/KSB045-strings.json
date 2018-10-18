@@ -4,11 +4,15 @@
     "KSB045.valueType.Y|block":"Y軸",
     "KSB045.pushType.down|block":"按下",
     "KSB045.pushType.up|block":"放開",
+    "KSB045.btnName.C|block":"C",
+    "KSB045.btnName.D|block":"D",
+    "KSB045.btnName.E|block":"E",
+    "KSB045.btnName.F|block":"F",
     "KSB045.btnName.SW|block":"搖桿",
     "KSB045.vibrate.on|block":"開",
     "KSB045.vibrate.off|block":"關",
     "KSB045.getJoystickValue|block": "取得搖桿值： %myType",
     "KSB045.getBtnValue|block": "%myBtn|按鈕被按下?",
     "KSB045.onBtnChanged|block": "當|%myBtn|按鈕被|%dir",
-    "KSB045.saetVibration|block": "設定振動馬達 %vType"
+    "KSB045.setVibration|block": "設定振動馬達 %vType"
 }

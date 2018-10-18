@@ -73,7 +73,7 @@ namespace KSB045 {
     /**
      * set the vibration motor is on or off  
      */
-    //% blockId=saetVibration block="set vibration motor %vType"
+    //% blockId=setVibration block="set vibration motor %vType"
     //% weight=45
     export function setVibration(vType: vibrate): void {
         pins.digitalWritePin(DigitalPin.P16, vType);
