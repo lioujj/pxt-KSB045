@@ -10,5 +10,5 @@
     "KSB045.getJoystickValue|block": "取得搖桿值： %myType",
     "KSB045.getBtnValue|block": "%myBtn|按鈕被按下?",
     "KSB045.onBtnChanged|block": "當|%myBtn|按鈕被|%dir",
-    "KSB045.saetVibration|block": "設定振動馬達 %vType",
+    "KSB045.saetVibration|block": "設定振動馬達 %vType"
 }
