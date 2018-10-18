@@ -8,6 +8,11 @@ Liou Zheng-Ji\
 劉正吉\
 [my page, https://sites.google.com/jes.mlc.edu.tw/ljj/](https://sites.google.com/jes.mlc.edu.tw/ljj/)
 
+## KSB045
+KSB045 is a gamepad extension board for microbit manufactured in Taiwan.\
+[KSB045, link here](http://www.buyic.com.tw/product_info.php?products_id=6747&Twesid=9pummf26rphq5rimfp8e0gatf2)
+![image](KSB045.jpg)
+
 ## License
 
 * MIT
