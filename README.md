@@ -1,7 +1,7 @@
-# joystick
+# KSB045
 
-這是專為micro:bit提供的搖桿積木
-This is the JoyStick blocks for micro:bit
+這是專為micro:bit提供的KSB045搖桿積木\
+This is the GamePad blocks for KSB045
 
 ## License
 
@@ -13,5 +13,5 @@ This is the JoyStick blocks for micro:bit
 (The metadata above is needed for package search.)
 
 ```package
-joystick=github:lioujj/pxt-joystick
+KSB045=github:lioujj/pxt-KSB045
 ```
