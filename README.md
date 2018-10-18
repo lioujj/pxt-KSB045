@@ -1,12 +1,7 @@
-# KSB045
+# joystick
 
-這是專為micro:bit提供的KSB045搖桿積木\
-This is the GamePad blocks for KSB045
-
-## Author
-Liou Zheng-Ji\
-劉正吉\
-[my page, https://sites.google.com/jes.mlc.edu.tw/ljj/](https://sites.google.com/jes.mlc.edu.tw/ljj/)
+這是專為micro:bit提供的搖桿積木
+This is the JoyStick blocks for micro:bit
 
 ## License
 
@@ -18,5 +13,5 @@ Liou Zheng-Ji\
 (The metadata above is needed for package search.)
 
 ```package
-KSB045=github:lioujj/pxt-KSB045
+joystick=github:lioujj/pxt-joystick
 ```
