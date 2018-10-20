@@ -13,6 +13,9 @@ KSB045 is a gamepad extension board for microbit manufactured in Taiwan.\
 [KSB045, link here](http://www.buyic.com.tw/product_info.php?products_id=6747&Twesid=9pummf26rphq5rimfp8e0gatf2)
 ![image](KSB045.jpg)
 
+## Video
+[![click here to see the sample video](https://img.youtube.com/vi/neh1mWzj54Y/0.jpg)](https://www.youtube.com/watch?v=neh1mWzj54Y)
+
 ## Sample1
 ![image](sample1.jpg)
 
