@@ -8,6 +8,8 @@ namespace KSB045 {
     let DPin = DigitalPin.P14;
     let EPin = DigitalPin.P13;
     let FPin = DigitalPin.P12;
+    let midX=getJoystickValue(valueType.X);
+    let midY=getJoystickValue(valueType.Y);
 
     export enum valueType {
         //% block="X"
@@ -44,11 +46,24 @@ namespace KSB045 {
      * Get the value of X axle and Y axle of the joystick, the value range is from 0 to 1023.
      */
     //% blockId=getJoystickValue block="joystick value of %myType"
-    //% weight=60
+    //% weight=70
     export function getJoystickValue(myType: valueType): number {
         switch (myType) {
             case valueType.X: return (1023 - pins.analogReadPin(XPin));
             case valueType.Y: return pins.analogReadPin(YPin);
+            default: return 0;
+        }
+    }
+
+    /**
+     * Get the value of X axle and Y axle of the joystick when the joystick in the center position.
+     */
+    //% blockId=getCenterValue block="joystick center value of %myType"
+    //% weight=60
+    export function getCenterValue(myType: valueType): number {
+        switch (myType) {
+            case valueType.X: return midX;
+            case valueType.Y: return midY;
             default: return 0;
         }
     }
@@ -78,4 +93,15 @@ namespace KSB045 {
     export function setVibration(vType: vibrate): void {
         pins.digitalWritePin(DigitalPin.P16, vType);
     }
+
+    /**
+     * set the power of vibration motor, from 0 to 1023. 0 to stop the vibration motor, and 1023 to full run the motor.
+     */
+    //% blockId=setVibrationPWM block="set the power of vibration motor(0~0123): %power"
+    //% power.min=0 power.max=1023
+    //% weight=40
+    export function setVibrationPWM(power: number): void {
+        pins.analogWritePin(AnalogPin.P16, power);
+    }
+
 }   
