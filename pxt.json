@@ -1,6 +1,6 @@
 {
     "name": "KSB045",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "這是專為micro:bit提供的KSB045搖桿積木(This is the GamePad blocks for KSB045)",
     "license": "MIT",
     "dependencies": {
