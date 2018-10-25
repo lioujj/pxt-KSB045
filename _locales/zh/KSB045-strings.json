@@ -12,7 +12,9 @@
     "KSB045.vibrate.on|block":"開",
     "KSB045.vibrate.off|block":"關",
     "KSB045.getJoystickValue|block": "取得搖桿值： %myType",
+    "KSB045.getCenterValue|block": "取得搖桿置中值： %myType",
     "KSB045.getBtnValue|block": "%myBtn|按鈕被按下?",
     "KSB045.onBtnChanged|block": "當|%myBtn|按鈕被|%dir",
-    "KSB045.setVibration|block": "設定振動馬達 %vType"
+    "KSB045.setVibration|block": "設定振動馬達 %vType",
+    "KSB045.setVibrationPWM|block": "設定振動馬達以 %vType|力道振動(0~1023)"
 }
