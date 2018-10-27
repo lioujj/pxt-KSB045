@@ -1,6 +1,11 @@
 //% weight=0 color=#920dc6 icon="\uf11b" block="GamePad"
 namespace KSB045 {
-
+    export enum valueType {
+        //% block="X"
+        X,
+        //% block="Y"
+        Y
+    }
     let XPin = AnalogPin.P2;
     let YPin = AnalogPin.P1;
     let SWPin = DigitalPin.P8;
@@ -11,12 +16,6 @@ namespace KSB045 {
     let midX=getJoystickValue(valueType.X);
     let midY=getJoystickValue(valueType.Y);
 
-    export enum valueType {
-        //% block="X"
-        X,
-        //% block="Y"
-        Y
-    }
     export enum pushType {
         //% block="pressed"
         down = PulseValue.High,
