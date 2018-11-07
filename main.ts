@@ -13,8 +13,18 @@ namespace KSB045 {
     let DPin = DigitalPin.P14;
     let EPin = DigitalPin.P13;
     let FPin = DigitalPin.P12;
-    let midX=getJoystickValue(valueType.X);
-    let midY=getJoystickValue(valueType.Y);
+    let midX = getJoystickValue(valueType.X);
+    let midY = getJoystickValue(valueType.Y);
+    let init=false;
+    function pin_init():void{
+        pins.setPull(CPin, PinPullMode.PullNone);
+        pins.setPull(DPin, PinPullMode.PullNone);
+        pins.setPull(EPin, PinPullMode.PullNone);
+        pins.setPull(FPin, PinPullMode.PullNone);
+        pins.setPull(SWPin, PinPullMode.PullNone);
+        init=true;
+    }
+
 
     export enum pushType {
         //% block="pressed"
@@ -81,6 +91,9 @@ namespace KSB045 {
     //% blockId=onBtnChanged block="on button |%myBtn|  %dir|" blockInlineInputs=true
     //% weight=50
     export function onBtnChanged(myBtn: btnName, dir: pushType, handler: Action): void {
+        if (!init){
+            pin_init();
+        }
         pins.onPulsed(<number>myBtn, <number>dir, handler);
     }
 
@@ -102,5 +115,4 @@ namespace KSB045 {
     export function setVibrationPWM(power: number): void {
         pins.analogWritePin(AnalogPin.P16, power);
     }
-
-}   
+} 
