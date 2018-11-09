@@ -16,7 +16,6 @@ namespace KSB045 {
     let midX = getJoystickValue(valueType.X);
     let midY = getJoystickValue(valueType.Y);
     let init=false;
-    pin_init();
     function pin_init():void{
         pins.setPull(CPin, PinPullMode.PullUp);
         pins.setPull(DPin, PinPullMode.PullUp);
@@ -25,6 +24,8 @@ namespace KSB045 {
         pins.setPull(SWPin, PinPullMode.PullUp);
         init=true;
     }
+    pin_init();
+
 
 
     export enum pushType {
