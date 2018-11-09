@@ -17,11 +17,11 @@ namespace KSB045 {
     let midY = getJoystickValue(valueType.Y);
     let init=false;
     function pin_init():void{
-        pins.setPull(CPin, PinPullMode.PullNone);
-        pins.setPull(DPin, PinPullMode.PullNone);
-        pins.setPull(EPin, PinPullMode.PullNone);
-        pins.setPull(FPin, PinPullMode.PullNone);
-        pins.setPull(SWPin, PinPullMode.PullNone);
+        pins.setPull(CPin, PinPullMode.PullUp);
+        pins.setPull(DPin, PinPullMode.PullUp);
+        pins.setPull(EPin, PinPullMode.PullUp);
+        pins.setPull(FPin, PinPullMode.PullUp);
+        pins.setPull(SWPin, PinPullMode.PullUp);
         init=true;
     }
 
