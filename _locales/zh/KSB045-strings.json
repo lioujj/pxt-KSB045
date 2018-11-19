@@ -16,5 +16,6 @@
     "KSB045.getBtnValue|block": "%myBtn|按鈕被按下?",
     "KSB045.onBtnChanged|block": "當|%myBtn|按鈕被|%dir",
     "KSB045.setVibration|block": "設定振動馬達 %vType",
-    "KSB045.setVibrationPWM|block": "設定振動馬達以 %power|力道振動(0~1023)"
+    "KSB045.setVibrationPWM|block": "設定振動馬達以 %power|力道振動(0~1023)",
+    "KSB045.sendMyMessage1|block": "發射紅外線訊息: %msg| ,發射次數： %times| 次, 訊息編碼:%myType"
 }
