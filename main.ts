@@ -46,15 +46,15 @@ namespace KSB045 {
     }
     export enum btnName {
         //% block="C"
-        C = <number>CPin,
+        C = DigitalPin.P15,
         //% block="D"
-        D = <number>DPin,
+        D = DigitalPin.P14,
         //% block="E"
-        E = <number>EPin,
+        E = DigitalPin.P13,
         //% block="F"
-        F = <number>FPin,
+        F = DigitalPin.P12,
         //% block="Stick"
-        SW = <number>SWPin
+        SW = DigitalPin.P8
     }
     export enum vibrate {
         //% block="on"
